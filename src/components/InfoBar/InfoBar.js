@@ -1,18 +1,17 @@
 import React from 'react';
-import './InfoBar.css'
+import { Link } from 'react-router-dom';
+import './InfoBar.css';
 
-
-
-const InfoBar = ({ room }) => (
-    <div className="infoBar">
-      <div className="leftInnerContainer">
-        <img className="onlineIcon"  alt="online icon" />
-        <h3>{room}</h3>
-      </div>
-      <div className="rightInnerContainer">
-        <a href="/"><img  alt="close icon" /></a>
-      </div>
+const InfoBar = () => (
+  <div className="infoBar">
+    <div className="leftInnerContainer">
+      <i class="far fa fa-lg fa-comments"></i>
+      <h3 className="space">Chat Section</h3>
     </div>
-  );
-  
-  export default InfoBar;
+    <div className="rightInnerContainer">
+      <Link to="/"><i className="cross far fa fa-window-close"></i></Link>
+    </div>
+  </div>
+);
+
+export default InfoBar;

@@ -1,30 +1,57 @@
 import React, { Component } from 'react';
-import {Switch, Route, Redirect } from 'react-router-dom';
-import Navbar from './Navbar/Navbar';
-import Chat from './Chat/Chat';
-import Login from './Login/Login';
+import { Switch, Route, Redirect } from 'react-router-dom';
+import Room from './Room/Room';
 import Footer from './Footer/Footer';
 import Join from './Join/Join';
-import Timer from './Timer/Timer';
-import Room from './Room/Room';
-
+import DashboardPage from './Dashboard/Dashboard';
+import Settings from './Settings/Settings.js';
+import './styles.css'
 class Main extends Component {
-    render() {
-        return (
-            <div>
-                <Navbar />
-                <Switch>
-                    <Route path="/login" component={Login}/>
-                    {/* <Route path='/join' component={Join} /> */}
-                    <Route path='/chat' component={Room} />
-                    <Route path='/join' component={Timer} />
-                    {/* <Route path='/room' component={Room} /> */}
-                    <Redirect to="/login" />
-                </Switch>
-                <Footer />
-            </div>
-        )
-    }
-}  
 
+
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      user: {}
+    }
+  }
+
+  componentWillMount() {
+
+    fetch("http://localhost:4000/auth/login/success", {
+      method: "GET",
+      credentials: "include",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Credentials": true
+      }
+    })
+      .then(res => res.json())
+      .then(data => {
+        this.setState({ user: data.user });
+      });
+
+  }
+
+  render() {
+
+    return (
+      <div>
+        <Switch>
+          <Route exact path="/" component={DashboardPage} />
+          <Route path="/dashboard" component={DashboardPage} />
+          <Route path="/settings" component={Settings} />
+          <Route path="/room" component={Room} />
+          <Route path="/join" component={() => <Join user={this.state.user} />} />
+          <Redirect to="/" />
+        </Switch>
+        <Footer />
+      </div>
+    )
+  }
+
+
+}
 export default Main;

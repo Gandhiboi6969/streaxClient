@@ -3,19 +3,22 @@
 }
 
 .footer {
-    padding: 10px 0 5px 0 !important;
+    /* padding: 10px 0 5px 0 !important; */
+    background-color:var(--black);
+    color:var(--white);
 }
 
-li>a{
-    font-family: cursive !important;
-    font-weight : 300;
-    color:black !important;
+.footer-foot{
+background-color:var(--black);
+padding:0;
+margin-top:20px;
+padding-bottom:10px;
+margin:0;
+width:100%;
+color:var(--white);
 }
-
-/* .bhagwa {
-    background-color: rgb(247, 65, 33) !important;
+.foot-p{
+    color:var(--white); 
+    text-align:center;
+    font-weight:normal;
 }
-
-.bhagwa-light {
-    background-color: rgb(248, 128, 107) !important;
-} */

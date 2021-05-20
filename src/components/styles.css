@@ -1,0 +1,12 @@
+:root {
+    --grey: #EEF2F7;
+    --white: #ffffff;
+    --black:#272727;
+  }
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #EEF2F7;
+}

@@ -19,6 +19,7 @@
 .h1 {
 	font-weight: bold;
 	margin: 0;
+	margin-bottom: 20px;
 }
 
 .h2 {
@@ -26,7 +27,7 @@
 }
 
 .p {
-	font-size: 14px;
+	font-size: 20px;
 	font-weight: 100;
 	line-height: 20px;
 	letter-spacing: 0.5px;
@@ -46,8 +47,8 @@
 
 .button {
 	border-radius: 20px;
-	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
+	border: 1px solid #272727;
+	background-color: #272727;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -79,15 +80,7 @@
 	padding: 0 50px;
 	height: 100%;
 	text-align: center;
-}
-
-.input {
-	background-color: #eee;
-	border: none;
-	padding: 12px 15px;
-	margin: 8px 0;
-	width: 100%;
-}
+} 
 
 .container-login {
 	background-color: #fff;
@@ -160,9 +153,9 @@
 }
 
 .overlay {
-	background: #FF4B2B;
-	background: -webkit-linear-gradient(to right, #FF4B2B, #FF4B2B);
-	background: linear-gradient(to right, #FF4B2B, #FF4B2B);
+	background: #272727;
+	background: -webkit-linear-gradient(to right, #272727, #272727);
+	background: linear-gradient(to right, #272727, #272727);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -226,14 +219,16 @@
 	width: 40px;
 }
 
-.login>footer {
-    background-color: #222;
-    color: #fff;
-    font-size: 14px;
-    bottom: 0;
-    position: fixed;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 999;
+
+.social-button{
+	
+	background-color: #272727;
+	height: auto;
+	align-items: center;
+	justify-content: center;
 }
+@media (max-width:700px) {
+   .p{
+	   display: none;
+   }
+} 

@@ -1,69 +1,81 @@
-body {
-    padding: 50px;
-    background-color: #66CCFF;
-    font-family: sans-serif;
-}
 
-#container {
-    display: flex;
-    justify-content: center;
-}
-
-.todoListMain .header input {
+.todoListMain .todo-header input {
     padding: 10px;
+    margin-left: 15px;
     font-size: 16px;
     border: 2px solid #FFF;
-    width: 165px;
+    width: 65%;
     border-radius: 5px;
 }
 
-.todoListMain .header button {
+.todo-header button {
     padding: 10px;
     font-size: 16px;
     margin: 10px;
     margin-right: 0px;
-    background-color: #0066FF;
+    background-color: #272727;
     color: #FFF;
-    border: 2px solid #0066FF;
+    border: 2px solid #272727;
     border-radius: 5px;
+    width:25%;
 }
 
-.todoListMain .header button:hover {
-    background-color: #003399;
-    border: 2px solid #003399;
+.todoListMain .todo-header button:hover {
+    background-color: black;
+    border: 2px solid black;
     cursor: pointer;
 }
 
 .todoListMain .theList {
     list-style: none;
     padding-left: 0;
-    width: 250px;
+    width: 90%;
 }
 
-.todoListMain .theList li {
-    color: #333;
-    background-color: rgba(255, 255, 255, .5);
+.todoListMain .theList .todo-li {
+    color: white;
+    background-color: #272727;
     padding: 15px;
+    margin-left: 15px;
     margin-bottom: 15px;
     border-radius: 5px;
     list-style: none;
-}
-
-ul.theList {
-    padding: 0;
-}
-
-.todoListMain .theList li {
-    color: #333;
-    background-color: rgba(255, 255, 255, .5);
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-
+    text-align: center;
     transition: background-color .2s ease-out;
+    width: 100%;
 }
 
-.todoListMain .theList li:hover {
-    background-color: pink;
-    cursor: pointer;
+
+
+
+.todoListMain .theList .todo-li:hover {
+    background-color: black ;
+    cursor: pointer ;
+    border-radius:10px;
+}
+.inpu{
+    background-color:#EEF2F7;
+}
+.todo-h1{
+    margin:10px;
+    background-color:#272727;
+    margin:0;
+    padding:0;
+    font-size:10px;
+    height:60px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.messages {
+    padding: 5% 0;
+    overflow: auto;
+    flex: auto;
+}
+.scroll-list{
+    height:300px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }

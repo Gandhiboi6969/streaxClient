@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo&display=swap');
+body{
+  background-color:var(--grey);
+  font-family: 'KoHo', sans-serif !important;
+}
+
+
+
+.header 
+{
+  background-color:#252429 ;
+}
+
+
+.row
+{
+  margin:10px;
+}
+
+
+
+.row,.welcome-text
+{
+  margin-top:50px;
+  
+}
+.welcome-text
+{
+  color:var(--black);
+  font-weight:bold;
+}
+
+
+.info-cards
+{
+  background-color:var(--white);
+  border-radius: 15px;
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+}
+
+p,th,td,.text
+{
+  color:#272727;
+  font-weight:bold;
+}
+
+.leaderBoard-card,.chart-Card 
+{
+  border-radius:15px;
+  background-color:var(--white);
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+}
+
+.main-chart-card
+{
+  border-radius:15px;
+  background-color:var(--white);
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+}
+
+.weather-card-hr1{
+  max-width: 400px;
+  overflow: hidden;
+}
+.weather-image-hr2{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+.weather-card
+{
+  margin-bottom:20px;
+}
+
+
+.weather-card2
+{
+  border-radius: 15px;
+  background-color:var(--white);
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+  
+}
+.place{
+  padding:0;
+  margin:0;
+  margin-left:20px;
+}
+
+.my-drop-menu
+{
+  background-color:#252429;
+  
+  
+}
+
+.text2
+{
+  color:white;
+  margin-right: 22px !important;
+}
+
+.textlink
+{color:white !important;
+display:inline;
+}
+
+.textlink:hover{
+  color:whitesmoke;
+}
+
+
+.profile-image
+{
+  width: 25%;
+  height:25%;
+  border-radius: 50%;
+  border:2px solid;
+  border-color: white;
+  
+}
+.dropdown-item{
+  color:var(--white);
+}
+#dropdownMenuButton{
+  color:var(--white);
+  font-size:20px;
+}

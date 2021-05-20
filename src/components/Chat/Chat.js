@@ -1,51 +1,28 @@
 import React, { useState, useEffect } from "react";
 import queryString from 'query-string';
 import io from "socket.io-client";
-
-
 import Messages from '../Messages/Messages';
 import InfoBar from '../InfoBar/InfoBar';
 import Input from '../Input/Input';
-
 import './Chat.css';
 
-const ENDPOINT = 'http://localhost:5000/';
+const ENDPOINT = 'http://localhost:4000/';
 
 let socket;
-
-  // componentDidMount(){
-  //     // Simple POST request with a JSON body using fetch
-  //     const requestOptions = {
-  //         method: 'POST',
-//         headers: { 'Content-Type': 'application/json' },
-//         body: JSON.stringify({ title: 'React POST Request Example' })
-//     };
-//     fetch('', requestOptions)
-//         .then(response => response.json())
-//         .then(data => this.setState({ postId: data.id }));
-// }
-
-
-
 
 const Chat = ({ location }) => {
   const [name, setName] = useState('');
   const [room, setRoom] = useState('');
   const [users, setUsers] = useState('');
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState();
   const [messages, setMessages] = useState([]);
-  const [apiResponse,setApiResponse]=useState('');
-
- 
-
+  // const [apiResponse,setApiResponse]=useState('');
 
   useEffect(() => {
     var { name, room } = queryString.parse(location.search);
     
-    room=room.slice(0,room.indexOf(':'));
-    
-    
-    
+    console.log('in chatJs',room);
+
     var connectionOptions =  {
         "force new connection" : true,
         "reconnectionAttempts": "Infinity", 
@@ -56,17 +33,18 @@ const Chat = ({ location }) => {
    socket = io.connect(ENDPOINT,connectionOptions);
 
     setRoom(room);
-    setName(name)
+    setName(name);
 
     socket.emit('join', { name, room }, (error) => {
       if(error) {
         alert(error);
       }
     });
-  }, [ENDPOINT, location.search]);
+  }, []);
   
   useEffect(() => {
     socket.on('message', message => {
+      console.log(message);
       setMessages(messages => [ ...messages, message ]);
     });
     
@@ -79,8 +57,8 @@ const Chat = ({ location }) => {
     event.preventDefault();
     
     if(message) {
-        
-        socket.emit('sendMessage', message, () => setMessage(''));
+        console.log(message);
+      socket.emit('sendMessage', message, () => setMessage(''));
     }
   }
 
