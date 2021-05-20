@@ -16,7 +16,7 @@ function Room({location}) {
         
 
 
-        fetch(`http://localhost:4000/checkMehfilExists`, {
+        fetch(`https://streax-app.herokuapp.com/checkMehfilExists`, {
             method: "POST",
             credentials: "include",
             body: JSON.stringify({

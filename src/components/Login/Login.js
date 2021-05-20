@@ -34,7 +34,7 @@ class Login extends Component {
                     <div className="form-container sign-up-container">
                         <form action="/register" className="form" method="post">
                             <h1 className="h1">Sign In</h1>
-                            <a href="http://localhost:4000/auth/google" className="btn btn-block text-white social-button">
+                            <a href="https://streax-app.herokuapp.com/auth/google" className="btn btn-block text-white social-button">
                                 <span className="fa fa-google "></span>
                             </a>
                         </form>
@@ -42,7 +42,7 @@ class Login extends Component {
                     <div className="form-container sign-in-container">
                         <form action="/SignIn" className="form" method="post">
                             <h1 className="h1">Sign In </h1>
-                            <a href="http://localhost:4000/auth/facebook" className="btn btn-block text-white social-button">
+                            <a href="https://streax-app.herokuapp.com/auth/facebook" className="btn btn-block text-white social-button">
                                 <span className="fa fa-facebook "></span>
                             </a>
                         </form>

@@ -6,7 +6,7 @@ import InfoBar from '../InfoBar/InfoBar';
 import Input from '../Input/Input';
 import './Chat.css';
 
-const ENDPOINT = 'http://localhost:4000/';
+const ENDPOINT = 'https://streax-app.herokuapp.com/';
 
 let socket;
 

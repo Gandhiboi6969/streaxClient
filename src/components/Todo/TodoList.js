@@ -28,7 +28,7 @@ class TodoList extends Component {
 	}
 	deleteItem(key,text) {
 		
-		fetch('http://localhost:4000/completeTasks',{
+		fetch('https://streax-app.herokuapp.com/completeTasks',{
 			method: "POST",
             credentials: "include",
             body: JSON.stringify({

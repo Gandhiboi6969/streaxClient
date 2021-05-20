@@ -16,7 +16,7 @@ class Participants extends Component {
   
 componentWillMount() {
     
-    fetch(`http://localhost:4000/participants`, {
+    fetch(`https://streax-app.herokuapp.com/participants`, {
         method: "POST",
         credentials: "include",
         body: JSON.stringify({

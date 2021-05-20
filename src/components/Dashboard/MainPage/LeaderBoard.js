@@ -27,7 +27,7 @@ addFriend(event)
 {
   event.preventDefault();
 
-  fetch(`http://localhost:4000/addFriend`, {
+  fetch(`https://streax-app.herokuapp.com/addFriend`, {
     method: "POST",
     credentials: "include",
     body: JSON.stringify({  

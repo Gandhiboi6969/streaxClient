@@ -42,7 +42,7 @@ class Settings extends Component {
     handleSubmit(event)
     {
       event.preventDefault();
-      fetch(`http://localhost:4000/updateInfo`, {
+      fetch(`https://streax-app.herokuapp.com/updateInfo`, {
         method: "POST",
         credentials: "include",
         body: JSON.stringify({

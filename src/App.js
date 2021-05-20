@@ -18,7 +18,7 @@ class App extends Component{
     { 
         
 
-        fetch("http://localhost:4000/auth/login/success", {
+        fetch("https://streax-app.herokuapp.com/auth/login/success", {
             method: "GET",
             credentials: "include",
             headers: {

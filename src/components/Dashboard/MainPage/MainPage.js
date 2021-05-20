@@ -18,7 +18,7 @@ const [user,setUser]=useState('')
     
     
 useEffect(()=>{
-fetch('http://localhost:4000/auth/userData',{
+fetch('https://streax-app.herokuapp.com/auth/userData',{
 method: "GET",
 credentials: "include",
 headers: {

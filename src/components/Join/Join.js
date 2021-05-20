@@ -9,7 +9,7 @@ const Join = (props) => {
   function myFunction(event) {
     const x = (!room) ? event.preventDefault() : null;
 
-    fetch("http://localhost:4000/createMehfil", {   
+    fetch("https://streax-app.herokuapp.com/createMehfil", {   
       method: "POST",
       body: JSON.stringify({
         roomName: room,
