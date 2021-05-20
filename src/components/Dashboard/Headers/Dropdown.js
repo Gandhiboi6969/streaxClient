@@ -20,7 +20,7 @@ console.log(props);
 
                   <div className="dropdown-menu my-drop-menu" aria-labelledby="dropdownMenuButton">
                         <Link className="dropdown-item text" to="/settings" ><i className="fas fa fa-cog"></i> Settings</Link>
-                        <Link className="dropdown-item text" to="http://localhost:4000/auth/logout"><i class="fas fa fa-sign-out"></i> Logout</Link>
+                        <Link className="dropdown-item text" to="https://streax-app.herokuapp.com/auth/logout"><i class="fas fa fa-sign-out"></i> Logout</Link>
                   </div>
 
             </div>

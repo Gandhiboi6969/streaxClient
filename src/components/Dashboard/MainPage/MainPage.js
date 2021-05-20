@@ -24,7 +24,8 @@ credentials: "include",
 headers: {
 Accept: "application/json",
 "Content-Type": "application/json",
-"Access-Control-Allow-Credentials": true
+"Access-Control-Allow-Credentials": true,
+'Access-Control-Allow-Origin':'*'
 }
 })
 .then(res=>res.json())

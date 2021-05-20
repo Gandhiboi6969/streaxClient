@@ -26,7 +26,8 @@ componentWillMount() {
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
-          "Access-Control-Allow-Credentials": true
+          "Access-Control-Allow-Credentials": true,
+          'Access-Control-Allow-Origin':'*'
         }
       }).then(res=>res.json())
         .then(data=>{this.setState({participants:data.participants})
