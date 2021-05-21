@@ -5,7 +5,7 @@ export default function WeatherCard(props) {
 
   const [temp, setTemp] = useState('');
   
-  const url = `http://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=649ef09b5a369e365022fa7ada004d68&units=metric`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=649ef09b5a369e365022fa7ada004d68&units=metric`;
   
   useEffect(() => {
     fetch(url)

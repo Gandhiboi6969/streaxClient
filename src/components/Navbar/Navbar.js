@@ -52,7 +52,7 @@ class NavbarComponent extends Component {
                                     </NavLink>
                                 </NavItem>
                                 <NavItem >
-                                    <a className="nav-link " href="http://localhost:4000/auth/logout" >
+                                    <a className="nav-link " href="https://streax-app.herokuapp.com/auth/logout" >
                                         <i className="fa fa-sign-out" /> Logout
                                         </a>
                                 </NavItem>

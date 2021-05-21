@@ -38,7 +38,7 @@ function Room({location}) {
     },[room])
     
     useEffect(()=>{
-        fetch(`http://localhost:4000/checkParticipants`, {
+        fetch(`https://streax-app.herokuapp.com/checkParticipants`, {
             method: "POST",
             credentials: "include",
             body: JSON.stringify({
