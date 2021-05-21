@@ -9,7 +9,7 @@ import Participants from '../Participants/Participants.js';
 import queryString from 'query-string';
 function Room({location}) {
     var { room } = queryString.parse(location.search);
-    room = room.replaceAll("%20", "");
+    
     
     const [invalid,setInvalid]=useState(false);
     
