@@ -16,7 +16,7 @@ class LeaderBoard extends Component {
   
 componentWillMount() {
     
-    fetch('http://localhost:4000/leaderboard')
+    fetch('https://streax-app.herokuapp.com/leaderboard')
     .then(res=>res.json())
     .then(data=>{
       this.setState({students:data});
