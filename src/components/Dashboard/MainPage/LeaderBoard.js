@@ -19,9 +19,6 @@ componentWillMount() {
   fetch(`https://streax-app.herokuapp.com/leaderboard`, {
     method: "GET",
     credentials: "include",
-    body: JSON.stringify({  
-  
-    }),
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
